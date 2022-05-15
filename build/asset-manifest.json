@@ -1,0 +1,27 @@
+{
+  "files": {
+    "app.js": "/static/js/app.29ac1632.chunk.js",
+    "app.js.map": "/static/js/app.29ac1632.chunk.js.map",
+    "runtime~app.js": "/static/js/runtime~app.2e9f1821.js",
+    "runtime~app.js.map": "/static/js/runtime~app.2e9f1821.js.map",
+    "static/js/2.bbda7d4d.chunk.js": "/static/js/2.bbda7d4d.chunk.js",
+    "static/js/2.bbda7d4d.chunk.js.map": "/static/js/2.bbda7d4d.chunk.js.map",
+    "favicon-16.png": "/favicon-16.png",
+    "favicon-32.png": "/favicon-32.png",
+    "favicon.ico": "/favicon.ico",
+    "index.html": "/index.html",
+    "manifest.json": "/manifest.json",
+    "serve.json": "/serve.json",
+    "static/js/2.bbda7d4d.chunk.js.LICENSE.txt": "/static/js/2.bbda7d4d.chunk.js.LICENSE.txt",
+    "static/media/Galaxy-A13-Card-Slot-Cover-Arctic-Blue.png": "/static/media/Galaxy-A13-Card-Slot-Cover-Arctic-Blue.21507313.png",
+    "static/media/Galaxy-A13-Card-Slot-Cover-Peach.png": "/static/media/Galaxy-A13-Card-Slot-Cover-Peach.860b6b55.png",
+    "static/media/Galaxy-A13-Soft-Black-Cover.png": "/static/media/Galaxy-A13-Soft-Black-Cover.67a9e5dd.png",
+    "static/media/Galaxy-A13-Soft-Clear-Cover.png": "/static/media/Galaxy-A13-Soft-Clear-Cover.3aecd25e.png",
+    "static/media/splash.png": "/static/media/splash.59202d46.png"
+  },
+  "entrypoints": [
+    "static/js/runtime~app.2e9f1821.js",
+    "static/js/2.bbda7d4d.chunk.js",
+    "static/js/app.29ac1632.chunk.js"
+  ]
+}
