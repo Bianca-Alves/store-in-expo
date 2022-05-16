@@ -51,7 +51,7 @@ export default function Carousel({imageW, imageH, time, data}) {
                 progressViewOffset={1}
                 renderItem={({item, index: Findex}) => {
                     return (
-                        <Image source={require(`../../../assets/img/${item}`)} 
+                        <Image source={item} 
                             key={Findex.toString()}
                     
                             style={{
