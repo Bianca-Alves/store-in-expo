@@ -2,6 +2,7 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 import Carousel from './src/components/Carousel';
 import products from './assets/data/products'
+import Footer from './src/components/Footer';
 
 export default function App() {
   return (
@@ -10,6 +11,7 @@ export default function App() {
       {products.map((product) => {
         return (<Carousel imageW={100} imageH={100} time={5000} data={product.color} key={product.id} />)
       })}
+      <Footer />
     </View>
   );
 }
@@ -19,6 +21,6 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#fff',
     alignItems: 'center',
-    justifyContent: 'center',
+    justifyContent: 'start',
   },
 });
