@@ -1,54 +1,45 @@
 import * as React from 'react';
 import { StatusBar, FlatList, Image, Animated, Text, View, Dimensions, StyleSheet, TouchableOpacity } from 'react-native';
-import { InteractionManager } from 'react-native';
 
-//
 export default function Carousel({imageW, imageH, time, data}) {
-    const ref = React.useRef(null)
-    
-    const scrollX = React.useRef(new Animated.Value(0)).current;
-    
-    const [index, setIndex] = React.useState(1);
+    const flatListRef = React.useRef(null);    
+    const currentIndex = React.useRef(1);
 
-    
-    const dataLength = data.length
-    const nextImage = () => {
-        
-        if (index < dataLength) {
-            const newIndex = index + 1
-            setIndex(newIndex)
-        } else {
-            setIndex(0)
-        }
-    }
-    
-    React.useEffect( () =>{
-        const interval = setInterval(()=>{nextImage()}, time);
-        return () => clearInterval(interval)
-    }, [index])
+    React.useEffect(() => {
+        const timer = setInterval(() => {
+            flatListRef.current.scrollToIndex({
+                animated: true,
+                index: currentIndex.current, 
+            });
+            console.log(currentIndex.current)
+            
+            currentIndex.current = currentIndex.current === data.length - 1
+                ? 0
+                : currentIndex.current + 1;
+        }, time);
+        return () => clearInterval(timer);
+    }, [time]);
     
     return (
             <Animated.FlatList 
-                ref={ref}
+                ref={flatListRef}
                 data={data} 
-                style={{
-                    backgroundColor: 'black',
-                    maxWidth: imageW,
-                    maxHeight: imageH,
-                }}
-
+                getItemLayout={(_, index) => (
+                    {length: imageW, offset: imageW * index, index}
+                  )}
+                pagingEnabled={true}
                 showsHorizontalScrollIndicator={false}
 
-                initialScrollIndex={index}
-                pagingEnabled={true}
-                onScroll={Animated.event(
-                    [{nativeEvent: {contentOffset: {x: scrollX}}}],
-                    { useNativeDriver: true}    
-                )}
-                
+                style={{
+                    maxWidth: imageW,
+                    maxHeight: imageH,
+                }} 
+
                 keyExtractor={(_, index) => index.toString()}
                 horizontal={true}
                 progressViewOffset={1}
+                
+                onScrollToIndexFailed={() => {}}
                 renderItem={({item, index: Findex}) => {
                     return (
                         <Image source={item} 
