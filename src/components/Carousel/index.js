@@ -10,18 +10,22 @@ export default function Carousel({imageW, imageH, time, data}) {
     
     const [index, setIndex] = React.useState(1);
 
-    /** 
+    
     const dataLength = data.length
     const nextImage = () => {
+        
         if (index < dataLength) {
-            setInitialScrollIndex(imageW * index)
-            setIndex((index+1))
+            const newIndex = index + 1
+            setIndex(newIndex)
         } else {
             setIndex(0)
         }
-    }*/
+    }
     
-
+    React.useEffect( () =>{
+        const interval = setInterval(()=>{nextImage()}, time);
+        return () => clearInterval(interval)
+    }, [index])
     
     return (
             <Animated.FlatList 
