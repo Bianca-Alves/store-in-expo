@@ -8,7 +8,7 @@ export default function App() {
     <View style={styles.container}>
       <StatusBar style="auto" />
       {products.map((product) => {
-        return (<Carousel imageW={'100px'} imageH={'100px'} time={1000} data={product.color} key={product.id} />)
+        return (<Carousel imageW={100} imageH={100} time={5000} data={product.color} key={product.id} />)
       })}
     </View>
   );
