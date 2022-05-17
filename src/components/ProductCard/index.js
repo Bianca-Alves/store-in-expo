@@ -7,11 +7,17 @@ export default function ProductCard({imageW, imageH, time, colors, title, price,
     return (
         <TouchableOpacity style={{
                 minHeight: height,
-                minWidth: width,
+                width: width,
                 marginTop: marginTop,
                 borderWidth: 1,
                 textAlign: 'center',
-                padding: 20
+                paddingTop: 20,
+                paddingBottom: 30,
+                borderColor: '#e5e5e5',
+                borderRadius: 16,
+                flex: 1,
+                justifyContent: 'space-between',
+                alignItems: 'center',
             }}>
             <View style={styles.carousel}>
                 <Carousel imageW={imageW} imageH={imageH} time={time} data={colors} />
@@ -31,32 +37,42 @@ const styles = StyleSheet.create({
         flex: 1, 
         justifyContent: 'center', 
         alignItems: 'center', 
-        marginBottom: 4
+        marginBottom: 2,
+        minWidth: '100%',
+        
     },
     title: {
         fontSize: 24,
-        maxWidth: '100%',
         fontWeight: 600,
         textAlign: 'center',
     },
     category: {
+        marginTop: 5,
+        marginBottom: 5,
         fontSize: 15,
         fontWeight: 400,
-        maxWidth: '100%',
         textAlign: 'left',
     },
     price: {
-        fontSize: 20,
+        fontSize: 25,
+        fontWeight: 600,
+        marginTop: 20,
         textAlign: 'center',
-        maxWidth: '100%',
     },
     buy: {
-        fontSize: 20,
+        
         textAlign: 'center',
+        width: '50%',
+        marginTop: 20,
+        paddingTop: 5,
+        paddingBottom: 9,
+        backgroundColor: 'blue',
+        borderRadius: 16,
     },
     buyText: {
-        fontSize: 20,
+        fontSize: 18,
+        fontWeight: 600,
         textAlign: 'center',
-        maxWidth: '100%',
+        color: 'white'
     },
 })

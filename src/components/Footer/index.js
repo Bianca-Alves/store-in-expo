@@ -10,7 +10,7 @@ const Footer = () => {
       <View style={styles.footer}>
           <View style={styles.container}>
             <View style={styles.col}>
-                <Text style={styles.primaryTitle}>Helpful Links</Text>
+                <Text style={styles.primaryTitle}>Produtos</Text>
                 <FlatList style={styles.info}
                     data={[
                     {key: 'Capinhas'},
@@ -81,8 +81,6 @@ export default Footer;
 
 const styles = StyleSheet.create({
     footer: {
-        position: 'absolute',
-        bottom: 0,
         width: '100%',
         alignItems: 'center',
         backgroundColor: 'black',

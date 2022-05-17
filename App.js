@@ -11,6 +11,9 @@ export default function App() {
     <View style={styles.container}>
       <StatusBar style="auto" />
       <FlatList 
+        style={{
+          marginBottom: 60
+        }}
         data={products}
         keyExtractor={(_, index) => index.toString()}
         renderItem={({item, index}) => {
@@ -24,8 +27,8 @@ export default function App() {
                   category={item.category}
                   price={item.price}
                   key={index}
-                  height={230}
-                  width={300}
+                  height={350}
+                  width={400}
                   marginTop={60}
               />)
         }}
