@@ -1,9 +1,9 @@
 import * as React from 'react';
-import { StatusBar, FlatList, Image, Animated, Text, View, Dimensions, StyleSheet, TouchableOpacity } from 'react-native';
+import { Image, Animated } from 'react-native';
 
 export default function Carousel({imageW, imageH, time, data}) {
     const flatListRef = React.useRef(null);    
-    const currentIndex = React.useRef(1);
+    const currentIndex = React.useRef(0);
 
     React.useEffect(() => {
         const timer = setInterval(() => {
@@ -11,7 +11,6 @@ export default function Carousel({imageW, imageH, time, data}) {
                 animated: true,
                 index: currentIndex.current, 
             });
-            console.log(currentIndex.current)
             
             currentIndex.current = currentIndex.current === data.length - 1
                 ? 0

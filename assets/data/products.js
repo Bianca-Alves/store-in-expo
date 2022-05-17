@@ -25,7 +25,7 @@ const products = [
         category: 'Power Accessories',
         price: '$ 49,99',
         color: [
-            require('../img/mAh-Battery-Pack-PD-Dark-Gray.png'),
+            require('../img/mAh-Battery-Pack-PD.png'),
         ]  
     },
     {
@@ -76,7 +76,7 @@ const products = [
         category: 'Tablet Acessories',
         price: '$ 69,99',
         color: [
-            require('../img/Galaxy-Tab-S8-Ultra-Protective-Standing-Cover.png')
+            require('../img/Galaxy-Tab-S8-Ultra-Protective-Standing-Cover.png'),
         ]  
     },
     {
@@ -85,7 +85,7 @@ const products = [
         category: 'Smart Accessories',
         price: '$ 30,00',
         color: [
-            require('../img/Manfrotto-PIXI-Mini-Tripod.png')
+            require('../img/Manfrotto-PIXI-Mini-Tripod.png'),
         ]  
     },
     {
@@ -94,7 +94,7 @@ const products = [
         category: 'Smart Accessories',
         price: '$ 04,00',
         color: [
-            require('../img/Mini-Tripe-Flexivel.png')
+            require('../img/Mini-Tripe-Flexivel.png'),
         ]  
     },
     {
@@ -103,7 +103,7 @@ const products = [
         category: 'Smart Accessories',
         price: '$ 05,00',
         color: [
-            require('../img/Mini-Tripe-Flexivel.png')
+            require('../img/Mini-Tripe-Flexivel.png'),
         ]  
     },
     {
@@ -112,7 +112,7 @@ const products = [
         category: 'Power Acessories',
         price: '$ 59,99',
         color: [
-            require('../img/65W-Trio-Adapter.png')
+            require('../img/65W-Trio-Adapter.png'),
         ]  
     },   
 ]
