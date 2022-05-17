@@ -45,6 +45,7 @@ const styles = StyleSheet.create({
         fontSize: 24,
         fontWeight: 600,
         textAlign: 'center',
+        maxWidth: '90%',
     },
     category: {
         marginTop: 5,

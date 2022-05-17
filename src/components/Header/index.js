@@ -3,7 +3,7 @@ import {View, Text, StyleSheet} from 'react-native';
 import { Ionicons} from '@expo/vector-icons';
 
 
-export default function header(){
+export default function Header(){
     return(
         
         <View style={styles.header}>
@@ -18,6 +18,7 @@ export default function header(){
                 </View>
             </View>
         </View>
+        
 
     );
 }
@@ -25,7 +26,7 @@ const styles = StyleSheet.create({
     header:{
         backgroundColor:'white',
         marginTop:0,
-        width:'100vw',
+        width:'100%',
         padding:15,
         alignItems:'center',
         flexDirection:'row',
