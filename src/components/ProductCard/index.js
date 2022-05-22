@@ -2,7 +2,7 @@ import React from 'react';
 import { StyleSheet, TouchableOpacity, Text, View } from 'react-native';
 import Carousel from '../Carousel';
 
-export default function ProductCard({imageW, imageH, time, colors, title, price, category, height, width, marginTop}) {
+export default function ProductCard({imageW, imageH, time, colors, title, price, category, height, width, marginTop, buttons}) {
 
     return (
         <TouchableOpacity style={{
@@ -20,7 +20,7 @@ export default function ProductCard({imageW, imageH, time, colors, title, price,
                 alignItems: 'center',
             }}>
             <View style={styles.carousel}>
-                <Carousel imageW={imageW} imageH={imageH} time={time} data={colors} />
+                <Carousel buttons={buttons} imageW={imageW} imageH={imageH} time={time} data={colors} />
             </View>
             <Text style={styles.title} >{title}</Text>
             <Text style={styles.category}>{category}</Text>
@@ -46,6 +46,7 @@ const styles = StyleSheet.create({
         fontWeight: 600,
         textAlign: 'center',
         maxWidth: '90%',
+        fontFamily: 'Samsung-Sans',
     },
     category: {
         marginTop: 5,
@@ -53,12 +54,13 @@ const styles = StyleSheet.create({
         fontSize: 15,
         fontWeight: 400,
         textAlign: 'left',
+        fontFamily: 'Samsung-Sans',
     },
     price: {
         fontSize: 25,
-        fontWeight: 600,
         marginTop: 20,
         textAlign: 'center',
+        fontFamily: 'Samsung-Sans-Bold',
     },
     buy: {
         
@@ -72,8 +74,9 @@ const styles = StyleSheet.create({
     },
     buyText: {
         fontSize: 18,
-        fontWeight: 600,
         textAlign: 'center',
-        color: 'white'
+        color: 'white',
+        paddingTop: 5,
+        fontFamily: 'Samsung-Sans-Bold',
     },
 })

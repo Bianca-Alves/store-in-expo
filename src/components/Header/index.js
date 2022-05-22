@@ -31,7 +31,8 @@ const styles = StyleSheet.create({
         alignItems:'center',
         flexDirection:'row',
         justifyContent:'space-between',
-        marginBottom:20
+        marginBottom:20,
+        fontFamily: 'Samsung-Logo',
 
     },
 
@@ -49,14 +50,15 @@ const styles = StyleSheet.create({
     },
 
     menu:{
-        marginTop:3
+        marginTop:3,
     },
 
     row:{
         backgroundColor:'black',
-        height:'2px',
+        height:'3px',
         width:'20px',
-        margin:2.5
+        margin: 2,
+        borderRadius:2,
     },
 
 })

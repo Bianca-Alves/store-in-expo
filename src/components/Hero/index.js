@@ -6,8 +6,8 @@ export default function Header(){
     return(
         <View style={styles.container}>
             <View style={styles.vtexts}>
-                <Text style={styles.title}>Samsung</Text>
-                <Text style={styles.text}>Samsung</Text>
+                <Text style={styles.title}>SAMSUNG</Text>
+                <Text style={styles.text}>Acessórios</Text>
             </View>
             
             <Image style={styles.heroImg} resizeMode={'contain'} source={require('../../../assets/img/hero_img.jpg')}/>
@@ -34,13 +34,15 @@ const styles = StyleSheet.create({
         top: '20%',
         width: '100%',
         fontSize: 40,
-        fontWeight: 600,
-        textAlign: 'center',  
+        textAlign: 'center',
+        marginBottom: 4,
+        fontFamily: 'Samsung-Logo',
     },
     text: {
         fontSize: 25,
         textAlign: 'right',
         width: '50%',
+        fontFamily: 'Samsung-Sans',
     },
     heroImg: {
         height: '100vh',
