@@ -1,11 +1,11 @@
 {
   "files": {
-    "app.js": "/static/js/app.9caeca3e.chunk.js",
-    "app.js.map": "/static/js/app.9caeca3e.chunk.js.map",
+    "app.js": "/static/js/app.db3bda43.chunk.js",
+    "app.js.map": "/static/js/app.db3bda43.chunk.js.map",
     "runtime~app.js": "/static/js/runtime~app.2e9f1821.js",
     "runtime~app.js.map": "/static/js/runtime~app.2e9f1821.js.map",
-    "static/js/2.e674d624.chunk.js": "/static/js/2.e674d624.chunk.js",
-    "static/js/2.e674d624.chunk.js.map": "/static/js/2.e674d624.chunk.js.map",
+    "static/js/2.428e8db3.chunk.js": "/static/js/2.428e8db3.chunk.js",
+    "static/js/2.428e8db3.chunk.js.map": "/static/js/2.428e8db3.chunk.js.map",
     "fonts/AntDesign.ttf": "/./fonts/AntDesign.ttf",
     "fonts/Entypo.ttf": "/./fonts/Entypo.ttf",
     "fonts/Feather.ttf": "/./fonts/Feather.ttf",
@@ -27,7 +27,7 @@
     "index.html": "/index.html",
     "manifest.json": "/manifest.json",
     "serve.json": "/serve.json",
-    "static/js/2.e674d624.chunk.js.LICENSE.txt": "/static/js/2.e674d624.chunk.js.LICENSE.txt",
+    "static/js/2.428e8db3.chunk.js.LICENSE.txt": "/static/js/2.428e8db3.chunk.js.LICENSE.txt",
     "static/media/65W-Trio-Adapter.png": "/static/media/65W-Trio-Adapter.8550ff05.png",
     "static/media/Galaxy-A13-Card-Slot-Cover-Arctic-Blue.png": "/static/media/Galaxy-A13-Card-Slot-Cover-Arctic-Blue.21507313.png",
     "static/media/Galaxy-A13-Card-Slot-Cover-Peach.png": "/static/media/Galaxy-A13-Card-Slot-Cover-Peach.860b6b55.png",
@@ -39,6 +39,9 @@
     "static/media/Galaxy-Tab-S8-Ultra-Protective-Standing-Cover.png": "/static/media/Galaxy-Tab-S8-Ultra-Protective-Standing-Cover.19b9cc35.png",
     "static/media/Manfrotto-PIXI-Mini-Tripod.png": "/static/media/Manfrotto-PIXI-Mini-Tripod.4c522720.png",
     "static/media/Mini-Tripe-Flexivel.png": "/static/media/Mini-Tripe-Flexivel.c6d669cb.png",
+    "static/media/Selfie-Ring-Light-Black.png": "/static/media/Selfie-Ring-Light-Black.86ef563e.png",
+    "static/media/Selfie-Ring-Light-Pink.png": "/static/media/Selfie-Ring-Light-Pink.d1b85a6a.png",
+    "static/media/Selfie-Ring-Light-Sky-Blue.png": "/static/media/Selfie-Ring-Light-Sky-Blue.9938918e.png",
     "static/media/Type-C-Headphones-Black.png": "/static/media/Type-C-Headphones-Black.20eb62b2.png",
     "static/media/Type-C-Headphones-White.png": "/static/media/Type-C-Headphones-White.097159b0.png",
     "static/media/Wireless-Charger-Trio-Black.png": "/static/media/Wireless-Charger-Trio-Black.486fcfd9.png",
@@ -51,7 +54,7 @@
   },
   "entrypoints": [
     "static/js/runtime~app.2e9f1821.js",
-    "static/js/2.e674d624.chunk.js",
-    "static/js/app.9caeca3e.chunk.js"
+    "static/js/2.428e8db3.chunk.js",
+    "static/js/app.db3bda43.chunk.js"
   ]
 }

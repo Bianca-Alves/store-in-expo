@@ -2,8 +2,8 @@
   "background_color": "#ffffff",
   "display": "standalone",
   "lang": "en",
-  "name": "storeWith12Products",
-  "short_name": "storeWith12Products",
+  "name": "Samsung Acessórios",
+  "short_name": "Samsung Acessórios",
   "start_url": "/?utm_source=web_app_manifest",
   "orientation": "portrait",
   "icons": [

@@ -4,6 +4,7 @@ const products = [
         name: 'Galaxy A13 Soft Cover',
         category: 'Covers',
         price: '$ 14,00',
+        quantity: 2,
         color: [
             require('../img/Galaxy-A13-Soft-Black-Cover.png'),
             require('../img/Galaxy-A13-Soft-Clear-Cover.png'),
@@ -14,6 +15,7 @@ const products = [
         name: 'Galaxy A13 Card Slot Cover',
         category: 'Covers',
         price: '$ 19,00',
+        quantity: 5,
         color: [
             require('../img/Galaxy-A13-Card-Slot-Cover-Arctic-Blue.png'),
             require('../img/Galaxy-A13-Card-Slot-Cover-Peach.png'),
@@ -24,6 +26,7 @@ const products = [
         name: '20,000 mAh Battery Pack PD',
         category: 'Power Accessories',
         price: '$ 49,99',
+        quantity: 8,
         color: [
             require('../img/mAh-Battery-Pack-PD.png'),
         ]  
@@ -33,6 +36,7 @@ const products = [
         name: 'Wireless Charger Trio',
         category: 'Power Accessories',
         price: '$ 89,90',
+        quantity: 1,
         color: [
             require('../img/Wireless-Charger-Trio-Black.png'),
             require('../img/Wireless-Charger-Trio-White.png'),
@@ -43,6 +47,7 @@ const products = [
         name: 'Galaxy Buds Pro',
         category: 'Audio',
         price: '$ 149,99',
+        quantity: 3,
         color: [
             require('../img/Galaxy-Buds-Pro-Phantom-Black.png'),
             require('../img/Galaxy-Buds-Pro-Phantom-Silver.png'),
@@ -51,9 +56,10 @@ const products = [
     },
     {
         id: 6,
-        name: 'Galaxy Buds Pro',
+        name: 'Galaxy Buds Pro Phantom',
         category: 'Audio',
-        price: '$ 149,99',
+        price: '$ 169,99',
+        quantity: 10,
         color: [
             require('../img/Galaxy-Buds-Pro-Phantom-Black.png'),
             require('../img/Galaxy-Buds-Pro-Phantom-Silver.png'),
@@ -65,6 +71,7 @@ const products = [
         name: 'Type-C Headphones',
         category: 'Audio',
         price: '$ 29,99',
+        quantity: 13,
         color: [
             require('../img/Type-C-Headphones-Black.png'),
             require('../img/Type-C-Headphones-White.png')
@@ -75,6 +82,7 @@ const products = [
         name: 'Galaxy Tab S8 Ultra Protective Standing Cover',
         category: 'Tablet Acessories',
         price: '$ 69,99',
+        quantity: 1,
         color: [
             require('../img/Galaxy-Tab-S8-Ultra-Protective-Standing-Cover.png'),
         ]  
@@ -84,6 +92,7 @@ const products = [
         name: 'Manfrotto PIXI Mini Tripod',
         category: 'Smart Accessories',
         price: '$ 30,00',
+        quantity: 25,
         color: [
             require('../img/Manfrotto-PIXI-Mini-Tripod.png'),
         ]  
@@ -93,6 +102,7 @@ const products = [
         name: 'Mini Tripé Flexivel',
         category: 'Smart Accessories',
         price: '$ 04,00',
+        quantity: 12,
         color: [
             require('../img/Mini-Tripe-Flexivel.png'),
         ]  
@@ -102,8 +112,11 @@ const products = [
         name: 'Selfie Ring Light',
         category: 'Smart Accessories',
         price: '$ 05,00',
+        quantity: 9,
         color: [
-            require('../img/Mini-Tripe-Flexivel.png'),
+            require('../img/Selfie-Ring-Light-Black.png'),
+            require('../img/Selfie-Ring-Light-Pink.png'),
+            require('../img/Selfie-Ring-Light-Sky-Blue.png'),
         ]  
     },
     {
@@ -111,6 +124,7 @@ const products = [
         name: '65W Trio Adapter',
         category: 'Power Acessories',
         price: '$ 59,99',
+        quantity: 7,
         color: [
             require('../img/65W-Trio-Adapter.png'),
         ]  

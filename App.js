@@ -54,6 +54,7 @@ export default function App() {
                     imageW={100}
                     imageH={100}
                     time={5000}
+                    quantity={item.quantity}
                     buttons={false}
                     colors={item.color}
                     title={item.name}
