@@ -38,7 +38,7 @@ export default function App() {
         <Hero />
         <View style={{height: 60}}></View>
         <Carousel
-          imageW={selectedWidth * 0.8}
+          imageW={selectedWidth * 0.7}
           imageH={400}
           data={news}
           time={8000}
@@ -77,13 +77,11 @@ const styles = StyleSheet.create({
   smartphone: {
     marginLeft: 'auto',
     marginRight: 'auto',
-    marginTop: 30,
-    maxWidth: 425,
+    maxWidth: 450,
     maxHeigth: 638,
   },
   container: {
     maxWidth: 425,
-    overflowY: 'scroll',
     overflowX: 'none',
     flex: 1,
     width: '100%',
