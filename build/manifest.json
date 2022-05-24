@@ -2,23 +2,23 @@
   "background_color": "#ffffff",
   "display": "standalone",
   "lang": "en",
-  "name": "Samsung Acessórios",
-  "short_name": "Samsung Acessórios",
+  "name": "MobileTech | Acessórios para o seu celular",
+  "short_name": "MobileTech | Acessórios para o seu celular",
   "start_url": "/?utm_source=web_app_manifest",
   "orientation": "portrait",
   "icons": [
     {
-      "src": "\\pwa\\chrome-icon\\chrome-icon-144.png",
+      "src": "/pwa/chrome-icon/chrome-icon-144.png",
       "sizes": "144x144",
       "type": "image/png"
     },
     {
-      "src": "\\pwa\\chrome-icon\\chrome-icon-192.png",
+      "src": "/pwa/chrome-icon/chrome-icon-192.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "\\pwa\\chrome-icon\\chrome-icon-512.png",
+      "src": "/pwa/chrome-icon/chrome-icon-512.png",
       "sizes": "512x512",
       "type": "image/png"
     }
