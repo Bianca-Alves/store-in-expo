@@ -6,7 +6,7 @@ export default function Header(){
     return(
         <View style={styles.container}>
             <View style={styles.vtexts}>
-                <Text style={styles.title}>SAMSUNG</Text>
+                <Text style={styles.title}>MobileTech</Text>
                 <Text style={styles.text}>Acessórios</Text>
             </View>
             
