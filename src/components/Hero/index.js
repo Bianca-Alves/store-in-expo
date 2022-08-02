@@ -2,11 +2,11 @@ import React from 'react';
 import {View, Text, StyleSheet, Image} from 'react-native';
 
 
-export default function Header(){
+export default function Hero(){
     return(
         <View style={styles.container}>
             <View style={styles.vtexts}>
-                <Text style={styles.title}>ICase</Text>
+                <Text style={styles.title}>MobileTech</Text>
                 <Text style={styles.text}>Acessórios</Text>
             </View>
             
