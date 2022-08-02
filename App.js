@@ -1,18 +1,17 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, Dimensions, FlatList } from 'react-native';
-import Carousel from './src/components/Carousel';
-import products from './assets/data/products'
-import news from './assets/data/news'
-import Footer from './src/components/Footer';
-import ProductCard from './src/components/ProductCard';
-import Header from './src/components/Header';
-import Hero from './src/components/Hero';
-import AppLoading from 'expo-app-loading';
+import { Dimensions } from 'react-native';
 import { useFonts } from 'expo-font';
+import { NavigationContainer } from '@react-navigation/native';
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import { Entypo } from '@expo/vector-icons';
+import AppLoading from 'expo-app-loading';
+import Home from './src/pages/Home';
 
+
+const Tab = createBottomTabNavigator();
 
 export default function App() {
-  const {width, height} = Dimensions.get('screen')
+  const {width, _} = Dimensions.get('screen')
   let selectedWidth = width
 
   //web selectedWidth limit = 840 / mobile = 425
@@ -31,71 +30,26 @@ export default function App() {
   }
   
   return (
-    <View style={styles.smartphone}>
-      <View style={styles.container}>
-        <StatusBar style="auto" />
-        <Header />
-        <Hero />
-        <View style={{height: 60}}></View>
-        <Carousel
-          imageW={selectedWidth * 0.7}
-          imageH={400}
-          data={news}
-          time={8000}
-          buttons={true}
-        />      
-        <Text style={styles.title}>Nossos Produtos</Text>
-        <FlatList 
-          data={products}
-          keyExtractor={(_, index) => index.toString()}
-          renderItem={({item, index}) => {
-            return (
-                <ProductCard 
-                    imageW={100}
-                    imageH={100}
-                    time={5000}
-                    quantity={item.quantity}
-                    buttons={false}
-                    colors={item.color}
-                    title={item.name}
-                    category={item.category}
-                    price={item.price}
-                    key={index}
-                    height={350}
-                    width={300}
-                    marginTop={25}
-                />)
-          }}
-        />
-        <Footer />
-      </View>
-    </View>
+      <NavigationContainer>
+        <StatusBar />
+        <Tab.Navigator screenOptions={{
+          headerShown: false,
+          tabBarActiveTintColor: '#2D66FF',
+          tabBarShowLabel: false,
+        }}>
+          
+          <Tab.Screen 
+            name = 'Home'
+            component = {Home}
+            options={{
+              tabBarIcon: ({color, size}) => {
+                return <Entypo name="home" size={size} color={color}/>
+              }
+            }}
+          >
+
+          </Tab.Screen>
+        </Tab.Navigator>
+      </NavigationContainer>
   );
 }
-
-const styles = StyleSheet.create({
-  smartphone: {
-    marginLeft: 'auto',
-    marginRight: 'auto',
-    maxWidth: 450,
-    maxHeigth: 638,
-  },
-  container: {
-    maxWidth: 425,
-    overflowX: 'none',
-    flex: 1,
-    width: '100%',
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'start',
-  },
-  title: {
-    fontSize: 40,
-    fontWeight: 600,
-    width: '90%',
-    textAlign: 'left',
-    marginTop: 70,
-    marginBottom: 15,
-    fontFamily: 'Samsung-Sans',
-  }
-});

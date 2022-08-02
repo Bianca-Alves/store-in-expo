@@ -7,7 +7,7 @@ export default function Header(){
     return(
         
         <View style={styles.header}>
-            <Text style ={styles.text}> SAMSUNG </Text>
+            <Text style ={styles.text}> GOCASE </Text>
             <View style={styles.icons}>
                 <Ionicons name="ios-search-outline" size={24} color="black" />
                 <Ionicons name="cart-outline" size={24} color="black" />
