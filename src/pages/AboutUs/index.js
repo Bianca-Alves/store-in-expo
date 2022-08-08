@@ -3,7 +3,7 @@ import { View, Text } from 'react-native';
 
 // import { Container } from './styles';
 
-const Settings = () => {
+const AboutUs = () => {
   return (
     <View>
         <Text>
@@ -13,4 +13,4 @@ const Settings = () => {
   );
 }
 
-export default Settings;
+export default AboutUs;
