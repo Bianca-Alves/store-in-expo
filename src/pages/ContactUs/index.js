@@ -1,11 +1,11 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
-const AboutUs = () => {
+const ContactUs = () => {
   return (
     <View style={styles.container}>
         <Text style={styles.title}>
-            Olá, essa é a tela sobre nós.
+            Olá, essa é a tela de Contato.
         </Text >
     </View>
   );
@@ -28,4 +28,4 @@ const styles = StyleSheet.create({
     marginTop: 25,
   }
 })
-export default AboutUs;
+export default ContactUs;

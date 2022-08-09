@@ -2,7 +2,7 @@ import React from 'react';
 import { StyleSheet, TouchableOpacity, Text, View } from 'react-native';
 import Carousel from '../Carousel';
 
-export default function ProductCard({imageW, imageH, time, colors, title, price, category, quantity, height, width, marginTop, buttons}) {
+export default function ProductCard({imageW, imageH, time, colors, title, price, category, quantity, height, width, marginTop, buttons, navigation}) {
 
     return (
         <TouchableOpacity style={{
@@ -26,7 +26,7 @@ export default function ProductCard({imageW, imageH, time, colors, title, price,
             <Text style={styles.category}>{category}</Text>
             <Text style={styles.quantity}><b>Quantidade:</b> {quantity}</Text>
             <Text style={styles.price}>{price}</Text>
-            <TouchableOpacity style={styles.buy}>
+            <TouchableOpacity style={styles.buy} onPress={() => navigation.navigate('Descrição dos Produtos')}>
                 <Text style={styles.buyText} >COMPRAR</Text>
             </TouchableOpacity>
         </TouchableOpacity>

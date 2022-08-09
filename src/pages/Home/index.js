@@ -8,7 +8,7 @@ import ProductCard from '../../components/ProductCard';
 import Header from '../../components/Header';
 import Hero from '../../components/Hero';
 
-export default function App() {
+export default function App({navigation}) {
   const {width, height} = Dimensions.get('screen')
   let selectedWidth = width
 
@@ -51,6 +51,7 @@ export default function App() {
                     height={350}
                     width={300}
                     marginTop={25}
+                    navigation={navigation}
                 />)
           }}
         />

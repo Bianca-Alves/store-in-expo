@@ -5,10 +5,11 @@ import ProductCard from '../../components/ProductCard';
 
 // import { Container } from './styles';
 
-const Products = () => {
+const Products = ({navigation}) => {
     return (
         <View style={styles.productsWrapper}>
             <FlatList
+                style={styles.list}
                 data={products}
                 keyExtractor={(_, index) => index.toString()}
                 renderItem={({item, index}) => {
@@ -27,6 +28,7 @@ const Products = () => {
                             height={350}
                             width={300}
                             marginTop={25}
+                            navigation={navigation}
                         />)
                 }}
             />
@@ -40,8 +42,14 @@ const styles = StyleSheet.create({
     productsWrapper: {
         width: '100%',
         overflowX: 'none',
-        flex: 1,
-        alignItems: 'center',
-        justifyContent: 'center',
+        backgroundColor: 'white',
+        marginLeft: 'auto',
+        marginRight: 'auto',
+        maxWidth: 450,
+        height: '91vh',
     },
+    list: {
+        margin: 'auto',
+        overflowY: 'scroll',
+    }
 })
